@@ -1,0 +1,46 @@
+Letakkan file MP3 (mono, 44.1 kHz, ~128 kbps) di folder ini dengan nama persis di bawah.
+File yang belum ada tidak membuat error: subtitle tetap tampil dengan timing cadangan.
+
+== WAJIB: narasi intro (durasi beat mengikuti panjang audio) ==
+s1_b1.mp3  Budi baru saja pindah rumah ke luar kota.
+s1_b2.mp3  Ia ingin berobat, tapi faskesnya masih terdaftar di kota lama.
+s1_b3.mp3  Bantu Budi!
+s2_b1.mp3  Siti sudah di depan loket rumah sakit,   (intonasi menggantung)
+s2_b2.mp3  tapi kartu BPJS fisiknya tertinggal di rumah.
+s2_b3.mp3  Menu apa yang harus Siti tunjukkan?
+s3_b1.mp3  Andi malas menunggu lama                 (intonasi menggantung)
+s3_b2.mp3  di antrean puskesmas yang penuh sesak.
+s3_b3.mp3  Fitur apa yang harus Andi pakai dari rumah?
+s4_b1.mp3  Rina mendadak demam di tengah malam.
+s4_b2.mp3  Ia ingin bertanya pada dokter tanpa harus keluar rumah.
+s4_b3.mp3  Fitur apa yang bisa Rina pakai?
+s5_b1.mp3  Pak Joko ingin tahu tagihan iuran JKN bulan ini.
+s5_b2.mp3  Ia bingung berapa nominalnya dan cara membayarnya.
+s5_b3.mp3  Menu apa yang harus Pak Joko buka?
+
+== WAJIB: narasi success scene ==
+s1_w1.mp3  Budi membuka Perubahan Data Peserta, lalu mengganti faskes tingkat pertama.
+s1_w2.mp3  Faskes baru kini dekat rumah!
+s2_w1.mp3  Siti membuka tab Kartu dan menunjukkan KIS Digital beserta kode QR-nya.
+s2_w2.mp3  Petugas langsung memproses. Tanpa kartu fisik!
+s3_w1.mp3  Andi mengambil antrean online dari rumah.
+s3_w2.mp3  Nomor antrean di tangan, Andi datang sesuai jadwal!
+s4_w1.mp3  Rina membuka Telehealth dan memilih konsultasi dengan dokter.
+s4_w2.mp3  Dokter menjawab, Rina tenang tanpa keluar rumah.
+s5_w1.mp3  Pak Joko membuka Menu Lainnya, lalu Info Iuran.
+s5_w2.mp3  Iuran dibayar tepat waktu, kepesertaan tetap aktif!
+
+== OPSIONAL: penjelasan di kartu hasil (diputar setelah ui_selesai) ==
+edu_1.mp3  Di menu Perubahan Data Peserta, pilih Fasilitas Kesehatan Tingkat I, lalu pilih faskes baru dan simpan. Perubahan faskes dapat dilakukan minimal tiga bulan sekali.
+edu_2.mp3  Tab Kartu menampilkan Kartu Indonesia Sehat digital lengkap dengan kode QR. Kartu digital ini harap dibawa ketika berobat, jadi kartu fisik tidak wajib.
+edu_3.mp3  Antrean Online membuat kunjungan lebih efisien tanpa harus menunggu lama. Pilih jenis antrean, lalu poli dan tanggal daftar, kemudian simpan.
+edu_4.mp3  Telehealth menyediakan konsultasi dengan Tara AI atau dokter terjadwal lewat chat. Dalam keadaan darurat, segera hubungi seratus sembilan belas atau kunjungi IGD terdekat.
+edu_5.mp3  Menu Lainnya memuat Info Iuran: lihat sisa saldo dan tagihan. Batas waktu pembayaran tagihan iuran adalah tanggal sepuluh setiap bulan berjalan.
+
+== OPSIONAL: suara antarmuka ==
+ui_start.mp3   Selamat datang di simulasi Mobile JKN. Masukkan namamu untuk memulai.   (diputar saat layar awal pertama kali disentuh)
+ui_nama.mp3    Nama wajib diisi dulu ya.
+ui_salah.mp3   Ups, salah menu!
+ui_habis.mp3   Waktu habis!
+ui_selesai.mp3 Selamat, misi selesai!
+ui_juara.mp3   Papan peringkat sudah siap. Ayo main lagi!
