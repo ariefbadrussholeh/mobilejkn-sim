@@ -5,7 +5,7 @@ Buka `index.html` di browser. Mode dummy (localStorage) aktif otomatis. Audio di
 
 ## Dengan PostgreSQL
     npm install
-    DATABASE_URL=postgres://user:pass@localhost:5432/mobilejkn SEED=1 node server.js
+    DATABASE_URL=postgres://user:pass@localhost:5432/mobilejkn node server.js
 Buka http://localhost:3000 . Badge di papan peringkat harus menulis "Sumber data: PostgreSQL".
 Paksa mode dummy: `?mode=dummy`.
 
@@ -14,3 +14,7 @@ Paksa mode dummy: `?mode=dummy`.
 - server.js   : API leaderboard + menyajikan index.html dan /audio
 - audio/      : taruh MP3 sesuai DAFTAR_AUDIO.txt
 - assets/     : gambar asli (logo RSUD, maskot, logo Mobile JKN) untuk arsip
+
+## Mengganti gambar
+- Logo Mobile JKN (layar awal + header HP): cukup timpa `assets/logo-mobilejkn.png`, lalu hard refresh (Ctrl+F5). Embed di index.html hanya cadangan.
+- Logo RSUD & maskot dipakai sebagai tekstur 3D: timpa file di `assets/`, lalu jalankan `python embed_assets.py` (butuh `pip install pillow`).

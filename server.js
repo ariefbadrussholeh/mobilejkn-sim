@@ -1,7 +1,7 @@
 /* Backend opsional Simulasi Mobile JKN (Express + PostgreSQL)
    Setup:  npm init -y && npm i express pg
    Jalankan: DATABASE_URL=postgres://user:pass@localhost:5432/mobilejkn node server.js
-   (opsional) SEED=1 untuk mengisi 4 data dummy saat tabel masih kosong.
+   Data dummy TIDAK pernah dimasukkan ke database; dummy hanya tampilan di mode lokal (browser).
    Buka http://localhost:3000  -> index.html disajikan dari folder yang sama. */
 const express = require('express');
 const { Pool } = require('pg');
@@ -56,11 +56,7 @@ app.post('/api/scores', async (req, res) => {
 
 (async () => {
   await pool.query(SCHEMA);
-  if (process.env.SEED === '1') {
-    const { rows } = await pool.query('SELECT count(*)::int AS n FROM leaderboard');
-    if (!rows[0].n) await pool.query(`INSERT INTO leaderboard (nama,total_skor,sisa_waktu_total) VALUES
-      ('Rina',12500,100),('Dimas',10300,78),('Sari',8100,56),('Agus',6200,37)`);
-  }
   const port = process.env.PORT || 3000;
-  app.listen(port, () => console.log('Mobile JKN siap di http://localhost:' + port));
-})().catch(e => { console.error('Gagal start:', e); process.exit(1); });
+  const host = process.env.HOST || '127.0.0.1';
+  app.listen(port, host, () => console.log('Mobile JKN siap di http://' + host + ':' + port));
+})().catch(e => { console.error('Gagal start:', e.message); process.exit(1); });
