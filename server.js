@@ -7,7 +7,7 @@ const express = require('express');
 const { Pool } = require('pg');
 const path = require('path');
 
-const pool = new Pool({ connectionString: process.env.DATABASE_URL || 'postgresql://pos_user:Arifbadrus08!@116.212.75.229:5432/mobilejkn' });
+const pool = new Pool({ connectionString: process.env.DATABASE_URL || '' });
 const app = express();
 app.use(express.json());
 app.use((req, res, next) => {
