@@ -59,4 +59,4 @@ app.post('/api/scores', async (req, res) => {
   const port = process.env.PORT || 3000;
   const host = process.env.HOST || '127.0.0.1';
   app.listen(port, host, () => console.log('Mobile JKN siap di http://' + host + ':' + port));
-})().catch(e => { console.error('Gagal start:', e); process.exit(1); });
+})().catch(e => { console.error('Gagal start:', e.message); process.exit(1); });
