@@ -18,3 +18,8 @@ Paksa mode dummy: `?mode=dummy`.
 ## Mengganti gambar
 - Logo Mobile JKN (layar awal + header HP): cukup timpa `assets/logo-mobilejkn.png`, lalu hard refresh (Ctrl+F5). Embed di index.html hanya cadangan.
 - Logo RSUD & maskot dipakai sebagai tekstur 3D: timpa file di `assets/`, lalu jalankan `python embed_assets.py` (butuh `pip install pillow`).
+
+## Flag & kontrol
+- `CFG.eduAudio` (di bagian atas script index.html): false = audio edu_1..5 tidak diputar. Ubah ke true jika sudah ada.
+- Musik latar: taruh `audio/bgm.mp3` untuk memakai lagu sendiri.
+- Kontrol 3D: seret = putar, pinch / scroll = zoom. Diam 3 detik -> kembali ke jalur awal. Di mode HP, seret area di luar layar HP untuk memutar HP.

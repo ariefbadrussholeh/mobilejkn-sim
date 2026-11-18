@@ -44,3 +44,11 @@ ui_salah.mp3   Ups, salah menu!
 ui_habis.mp3   Waktu habis!
 ui_selesai.mp3 Selamat, misi selesai!
 ui_juara.mp3   Papan peringkat sudah siap. Ayo main lagi!
+
+== OPSIONAL: musik latar ==
+bgm.mp3        Musik latar ceria (loop). Jika ada, dipakai lebih dulu daripada musik dari CDN.
+               Urutan: audio/bgm.mp3 -> CDN Mixkit -> musik sintetis bawaan (WebAudio).
+
+== Edu audio (edu_1..edu_5.mp3) ==
+Sementara DIMATIKAN lewat flag di index.html:  const CFG={..., eduAudio:false}
+Ubah menjadi true bila file edu_*.mp3 sudah siap.
