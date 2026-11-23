@@ -52,3 +52,15 @@ bgm.mp3        Musik latar ceria (loop). Jika ada, dipakai lebih dulu daripada m
 == Edu audio (edu_1..edu_5.mp3) ==
 Sementara DIMATIKAN lewat flag di index.html:  const CFG={..., eduAudio:false}
 Ubah menjadi true bila file edu_*.mp3 sudah siap.
+
+== OPSIONAL: narasi scene GAGAL (waktu habis) ==
+s1_f1.mp3  Waktu habis! Budi belum sempat mengganti faskesnya.
+s1_f2.mp3  Ayo coba lagi: buka Perubahan Data Peserta, lalu pilih Faskes Tingkat I.
+s2_f1.mp3  Waktu habis! Siti masih bingung di depan loket.
+s2_f2.mp3  Ingat: kartu digital ada di tab Kartu.
+s3_f1.mp3  Waktu habis! Antrean di puskesmas makin panjang.
+s3_f2.mp3  Ambil antrean online dari rumah lewat tombol Ambil Antrean.
+s4_f1.mp3  Waktu habis! Demam Rina belum juga tertangani.
+s4_f2.mp3  Buka Telehealth, lalu pilih konsultasi dengan dokter.
+s5_f1.mp3  Waktu habis! Pak Joko belum tahu tagihannya.
+s5_f2.mp3  Cari Info Iuran lewat Menu Lainnya.
